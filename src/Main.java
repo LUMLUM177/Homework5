@@ -2,83 +2,72 @@ public class Main {
     public static void main(String[] args) {
 
         // Задание 1
-        int[] array1 = new int [] {1, 2, 3};
-        double[] array2 = {1.57, 7.654, 9.986};
-        char[] array3 = {'S', 'k', 'y', 'p', 'r', 'o', ' ', 'i', 's', ' ', 't', 'h', 'e', ' ', 'b', 'e', 's', 't', '.'};
+        int[] arrayInt = new int [3];
+        arrayInt[0] = 1;
+        arrayInt[1] = 2;
+        arrayInt[2] = 3;
+        double[] arrayDouble = {1.57, 7.654, 9.986};
+        char[] arrayChar = {'S', 'k', 'y', 'p', 'r', 'o', ' ', 'i', 's', ' ', 't', 'h', 'e', ' ', 'b', 'e', 's', 't', '.'};
 
         // Задание 2
-        for (int i = 0; i < array1.length; i++) {
-            System.out.print(array1[i]);
-            if (i < array1.length - 1) {
+        for (int i = 0; i < arrayInt.length; i++) {
+            System.out.print(arrayInt[i]);
+            if (i < arrayInt.length - 1) {
                 System.out.print(", ");
-            }
-            else {
+            } else {
                 System.out.println();
             }
         }
-        for (int i = 0; i < array2.length; i++) {
-            System.out.print(array2[i]);
-            if (i < array2.length - 1) {
+        for (int i = 0; i < arrayDouble.length; i++) {
+            System.out.print(arrayDouble[i]);
+            if (i < arrayDouble.length - 1) {
                 System.out.print(", ");
-            }
-            else {
+            } else {
                 System.out.println();
             }
         }
-
-        // Третий массив можно сделать подобным образом (как первый и второй, но тогда получается
-        // не очень красиво, поэтому я закомментировал строчки кода, чтобы надпись была "правильной".
-        // Так что, по моему личному мнению, это задание тоже можно засчитать как правильное)
-        // Если же всё-таки будет замечание, тогда я просто удалю значок комментариев и всё заработает!
-
-        for (int i = 0; i < array3.length; i++) {
-            System.out.print(array3[i]);
-        //  if (i < array3.length - 1) {
-        //      System.out.print(", ");
-        //  }
-        //  else {
-        //      System.out.println();
-        //  }
+        for (int i = 0; i < arrayChar.length; i++) {
+            System.out.print(arrayChar[i]);
+            if (i < arrayChar.length - 1) {
+                System.out.print(", ");
+            } else {
+                System.out.println();
+            }
         }
 
         // Задание 3
         System.out.println();
-        for (int i = array1.length - 1; i >= 0; i--) {
-            System.out.print(array1[i]);
+        for (int i = arrayInt.length - 1; i >= 0; i--) {
+            System.out.print(arrayInt[i]);
             if (i > 0) {
                 System.out.print(", ");
-            }
-            else {
+            } else {
                 System.out.println();
             }
         }
-        for (int i = array2.length - 1; i >= 0; i--) {
-            System.out.print(array2[i]);
+        for (int i = arrayDouble.length - 1; i >= 0; i--) {
+            System.out.print(arrayDouble[i]);
             if (i > 0) {
                 System.out.print(", ");
-            }
-            else {
+            } else {
                 System.out.println();
             }
         }
-        for (int i = array3.length - 1; i >= 0; i--) {
-            System.out.print(array3[i]);
+        for (int i = arrayChar.length - 1; i >= 0; i--) {
+            System.out.print(arrayChar[i]);
             if (i > 0) {
                 System.out.print(", ");
-            }
-            else {
+            } else {
                 System.out.println();
             }
         }
 
         // Задание 4
-        for (int i = 0; i < array1.length; i++) {
-            if (array1[i] % 2 != 0) {
-                array1[i] += 1;
+        for (int i = 0; i < arrayInt.length; i++) {
+            if (arrayInt[i] % 2 != 0) {
+                arrayInt[i]++;
+            }
+                System.out.print(arrayInt[i] + " ");
             }
         }
-        for (int i = 0; i < array1.length; i++) {
-            System.out.print(array1[i] + " ");
-        }
     }
-}
